@@ -5,22 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Website about my favorite recipes to make.">
     <title>My Favorite Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
 <body>
     <main>
-        <h1>My Favorite Recipes</h1>
-        <ul>
-            <li>Stroganoff</li>
-            <img src="images/stroganoff.jpg" alt="stroganoff" height="200">
-            <li>BBQ Chicken Tacos</li>
-            <img src="images/tacos.jpg" alt="Chicken tacos" height="200">
-            <li>Scones</li>
-            <img src="images/scones.jpg" alt="scones" height="200">
-        </ul>
-        <!-- list of favorite recipes and links to recipes coming soon -->
-        <a href="https://www.livewellbakeoften.com/scone-recipe/">
-            Click here for my favorite scones recipe online. I make these a couple times a month!
-        </a>
+        <header>
+            <!-- main title to my webpage -->
+            <h1>Cooking with Amanda</h1>
+            <img src="images/cooking.jpg" alt="cartoon cook" height="150">
+            <p>
+                I love to cook! I try new recipes all the time!
+                I have a few recipes I use often as well.
+                Here is just a few of my favorite recipes!
+            </p>
+        </header>
+        <!-- links to my other recipes -->
+        <!-- <nav id="nav_bar">
+            <ul>
+                <li><a href="bs.html">Beef Stroganoff</a></li>
+                <li><a href="tacos.html">Chicken Tacos</a></li>
+            </ul>
+        </nav> -->
+        <section>
+            <!-- pictures and links to other recipes on my website -->
+            <div id="recipes">
+                <div>
+                    <h2>Beef Stroganoff Recipe</h2>
+                    <a href ="bs.html"><img src="images/stroganoff.jpg" alt="stroganoff" height="200">
+                    </a>
+                </div>
+                <div>
+                    <h2>Chicken Tacos Recipe</h2>
+                    <a href ="tacos.html"><img src="images/tacos.jpg" alt="tacos" height="200">
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <p>
+                This is my go to recipe for scones.
+                <a href="https://www.livewellbakeoften.com/scone-recipe/">
+                    <img src="images/scones.jpg" alt="scones" height="200">
+                    Click here
+                </a>
+                to visit the website.
+            </p>
+            
+        </section>
     </main>
     <footer>&copy; Amanda Bradburn 2024</footer>
 </body>
