@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #85083c;
+    background-color: #cfadf1;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2em;
+}
+
+nav {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    }
+
+.column {
+    flex: 50%;
+    text-align: center;
+    margin-top: 5em;
+    font-family: 'protest riot';
+}
+
+h2 {
+    padding-bottom: 2em;
+}
+
+#ingredients {
+    border: 2px solid #85083c;
+    margin-right: 5em;
+    margin-bottom:auto;
+    margin-left: 5em;
+}
+
+ul {
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+a:hover {
+    color: #ba5e84;
+}
+
+img {
+    padding: 2em;
+}
