@@ -1,0 +1,98 @@
+*{
+    /* margin: 0;
+    padding: 0; */
+    color: #85083c;
+    background-color: #cfadf1;
+    font-family: 'protest riot';
+}
+
+body {
+    margin: auto;
+    width: 80%;
+}
+
+/* Heading */
+header {
+    text-align: center;
+}
+
+button {
+    margin-bottom: 2em;
+    padding: 0.5em;
+    border-color: #85083c;
+    box-shadow: #85083c 5px 2px 2px;
+    
+}
+
+header>img{
+    border-radius: 50%;
+}
+
+
+#nav_bar ul{
+    list-style-type: none;
+    text-align: center;
+    border-top: 4px solid #85083c;
+    border-bottom: 4px solid #85083c;
+    padding: 1em 0;
+}
+
+
+#nav_bar ul li{
+    
+    display: inline;
+    padding: 0 1em;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    #nav_bar ul li{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* main part of page */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+img {
+        padding: 2em;
+}
+
+.column {
+    flex: 50%;
+    text-align: center;
+    margin-top: 5em;
+    
+}
+
+h2 {
+    padding-bottom: 2em;
+}
+
+/* bottom of page */
+#ingredients {
+    border: 2px solid #85083c;
+    margin-right: 5em;
+    margin-bottom:auto;
+    margin-left: 5em;
+}
+
+ul {
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+ul.cow_dot {
+	list-style-image: url(../images/cow.png);
+    margin-left: 4em;
+}
+
+a:hover {
+    color: #ba5e84;
+}
+

@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="recipe for beef stroganoff">
     <title>Beef Stroganoff</title>
-    <link rel="stylesheet" href="beef_style.css">
+    <link rel="stylesheet" href="css\beef_style.css">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Protest+Riot?sort=date">
 </head>
+
 <body>
-    <h1>Beef Stroganoff Recipe</h1>
-    <nav id="nav_bar">
-            <a href="index.html">Home</a>
-    </nav>
-    <div class="row">
-        <div class="column">
-            <h2>Pictures and Description</h2>
-            <img src="images/rigatoni.jpg" alt="rigatoni" height="200">
-            <br>
-            <img src="images/soup.jpg" alt="onion soup" height="200">
-            <br>
-            <img src="images/mushroom_soup.jpg" alt="mushroom soup" height="200">
-            <br>
-            <img src="images/beef.jpg" alt="beef" height="200">
-            <br>
-            <img src="images/beef_meal.jpg" alt="beef stroganoff" height="200">
+    <header>
+        <h1>Beef Stroganoff Recipe</h1>
+        <img src="images/beef_meal.jpg" alt="beef stroganoff" height="200">
+        <p><a href="#ingredients"><button>Jump to Recipe</button></a></p>
+        <nav id="nav_bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tacos.html">Chicken Tacos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="row">
+            <!-- Left of main page -->
+            <div class="column">
+                <h2>Pictures and Description</h2>
+                <img src="images/rigatoni.jpg" alt="rigatoni" height="200">
+                <br>
+                <img src="images/soup.jpg" alt="onion soup" height="200">
+                <br>
+                <img src="images/mushroom_soup.jpg" alt="mushroom soup" height="200">
+                <br>
+                <img src="images/beef.jpg" alt="beef" height="200">
+            </div>
+            <!-- Right of main page -->
+            <div class="column">
+                <p>
+                    explaination of how to prepare
+                </p>
+            </div>
         </div>
-        <div class="column">
+        <!-- Jump to recipe bottom of main page -->
+        <div class="recipe">
             <h2>Recipe</h2>
             <div id="ingredients">
                 <h3><u>Ingredients</u></h3>
-                <ul>
+                <ul class="cow_dot">
                     <li>One package of noodles(I prefer rigatoni)</li>
                     <li>1 can of mushroom soup</li>
                     <li>1 packet of lipton onion soup mix</li>
@@ -40,6 +57,8 @@
                 </ul>
             </div>
         </div>
-    </div>
+        <p><a href="#">Back to Top</a></p>
+    </main>
 </body>
+
 </html>

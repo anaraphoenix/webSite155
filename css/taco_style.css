@@ -1,0 +1,94 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    background-color: #f7b059;
+    color: #093a09;
+    font-family: 'protest riot';
+}
+
+body {
+    margin: auto;
+    width: 80%;
+}
+
+header {
+    text-align: center;
+    margin: 2em;
+    
+}
+
+header>img {
+    padding: 2em;
+    border-radius: 50%;
+}
+
+button {
+    margin-bottom: 2em;
+    padding: 0.5em;
+    border-color: #093a09;
+    box-shadow: #093a09 5px 2px 2px;
+    
+}
+
+#nav_bar ul{
+    list-style-type: none;
+    text-align: center;
+    border-top: 4px solid #093a09;
+    border-bottom: 4px solid #093a09;
+    padding: 1em 0;
+}
+
+
+#nav_bar ul li{
+    
+    display: inline;
+    padding: 0 1em;
+    
+    
+}
+
+@media only screen and (max-width: 600px) {
+    #nav_bar ul li{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* main part of page */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+.column {
+    flex: 50%;
+    text-align: center;
+    margin-top: 5em;
+    
+}
+
+h2 {
+    padding-bottom: 2em;
+}
+
+#ingredients {
+    border: 2px solid #093a09;
+    margin-right: 5em;
+    margin-bottom:auto;
+    margin-left: 5em;
+}
+
+ul {
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+ul.taco_dot {
+	list-style-image: url(../images/taco_dot.png);
+    margin-left: 4em;
+}
+
+a:hover {
+    color: #76cc76;
+}

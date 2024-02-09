@@ -3,15 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="taco_style.css">
+    <link rel="stylesheet" href="css/taco_style.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Protest+Riot?sort=date">
     <title>Chicken Taco Recipe</title>
 </head>
 <body>
-    <h1>Chicken Taco Recipe</h1>
-    <nav id="nav_bar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-        </ul>
-    </nav>
+    <header>
+        <h1>Chicken Tacos Recipe</h1>
+        <img src="images/tacos.jpg" alt="chicken tacos" height="200">
+        <p><a href="#ingredients"><button>Jump to Recipe</button></a></p>
+        <nav id="nav_bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bs.html">Beef Stroganoff</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="row">
+            <!-- Left of main page -->
+            <div class="column">
+                <h2>Pictures and Description</h2>
+            </div>
+            <!-- Right of main page -->
+            <div class="column">
+                <p>
+                    explaination of how to prepare
+                </p>
+            </div>
+        </div>
+        <!-- Jump to recipe bottom of main page -->
+        <div>
+            <h2>Recipe</h2>
+            <div id="ingredients">
+                <h3><u>Ingredients</u></h3>
+                <ul class="taco_dot">
+                    <li>2lbs of boneless skinless chicken theighs</li>
+                </ul>
+            </div>
+            <p><a href="#">Back to Top</a></p>
+        </div>
+    </main>
 </body>
 </html>
