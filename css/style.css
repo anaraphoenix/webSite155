@@ -47,7 +47,7 @@ header>img{
 /* changed for screen size */
 @media only screen and (max-width: 600px) {
     #title_bar{
-        display: block;
+        flex-direction: column;
         margin-left: auto;
         margin-right: auto;
         border-top: none;
@@ -77,6 +77,12 @@ header>img{
     min-width: 160px;
     border: solid #582e82 1px;
     font-size: 14pt;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .nav_content{margin-left: 4.25em;
+    }
 }
 
 .nav_content a{
@@ -88,6 +94,7 @@ header>img{
 
 .nav_bar:hover .nav_content { 
     display: block;
+    flex-direction: column;
 }
 
 /* button */
@@ -109,7 +116,7 @@ header>img{
 /* change to view on smaller screen */
 @media only screen and (max-width: 600px) {
     .cards {
-        display: block;
+        flex-direction: column;
     }
 }
 
