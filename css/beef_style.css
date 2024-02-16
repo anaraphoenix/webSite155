@@ -1,85 +1,169 @@
-*{
-    /* margin: 0;
-    padding: 0; */
-    color: #85083c;
-    background-color: #cfadf1;
-    font-family: 'protest riot';
-}
 
 body {
     margin: auto;
     width: 80%;
+    background-color: #f6ddef;
+    font-family: 'protest riot';
+    color: #85083c;
 }
 
 /* Heading */
-header {
-    text-align: center;
+.title {
+    font-family: 'Sofia';
+    font-weight: bold;
 }
 
-button {
-    margin-bottom: 2em;
-    padding: 0.5em;
-    border-color: #85083c;
-    box-shadow: #85083c 5px 2px 2px;
-    
-}
-
-header>img{
-    border-radius: 50%;
-}
-
-
-#nav_bar ul{
-    list-style-type: none;
-    text-align: center;
-    border-top: 4px solid #85083c;
-    border-bottom: 4px solid #85083c;
-    padding: 1em 0;
-}
-
-
-#nav_bar ul li{
-    
-    display: inline;
-    padding: 0 1em;
+.logo {
+    display: block;
     
 }
 
 @media only screen and (max-width: 600px) {
-    #nav_bar ul li{
-        display: flex;
-        justify-content: center;
-        width: 100%;
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
 }
 
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.title>a>img {
+    border-radius: 50%;
+}
+
+/* jump to bottom recipe button */
+.jump-to {
+    padding: 0.5em;
+    border-color: #85083c;
+    box-shadow: #85083c 5px 2px 2px;
+    min-width: 100px;
+    margin-top: 0.5em;
+}
+
+/* main title and nav dropdown */
+#title_bar{
+    list-style-type: none;
+    text-align: center;
+    border-top: 4px solid #85083c;
+    border-bottom: 4px solid #85083c;
+    background-color: #c4a5b2;
+    padding-left: 2em;
+    padding-right: 2em;
+    
+}
+
+/* changed for screen size */
+@media only screen and (max-width: 600px) {
+    #title_bar{
+        margin-left: auto;
+        margin-right: auto;
+        border-top: none;
+        border-bottom: none;
+        padding-top: 1em;
+        padding-bottom: 2em;
+        border-left: 4px solid #85083c;
+        border-right: 4px solid #85083c;
+    }
+}
+
+.beef {
+    font-size: 20pt;
+    text-align: center;
+}
+
+/* nav dropdown button */
+.nav_bar {
+    position: relative;
+    display: inline-block;
+}
+
+
+.nav_content {
+    display: none;
+    position: absolute;
+    background-color: #f4bbeb;
+    min-width: 160px;
+    border: solid #85083c 1px;
+    font-size: 14pt;
+}
+
+.nav_content a{
+    color: #85083c;
+    text-decoration: none;
+    
+}
+
+
+.nav_bar:hover .nav_content { 
+    display: block;
+}
+
+/* button */
+.drop {
+    margin-top: 2em;
+    padding: 0.5em;
+    border-color: #85083c;
+    box-shadow: #85083c 5px 2px 2px;
+    min-width: 160px;
+}
+
+
 /* main part of page */
+
+.main_pic>p {
+    text-align: center;
+    
+}
+
+/* decoritive dividing line */
+.divide {
+    border: solid #85083c 2px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
 .row {
     display: flex;
-    flex-wrap: wrap;
-    }
+}
 
-img {
-        padding: 2em;
+/* change from columns to look clearer for screen size */
+@media only screen and (max-width: 600px) {
+    .row {
+        display: block;
+    }
+}
+
+.row>h2{
+    text-align: center;
 }
 
 .column {
-    flex: 50%;
-    text-align: center;
-    margin-top: 5em;
-    
+    width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
 }
 
 h2 {
     padding-bottom: 2em;
 }
 
+/* back to top link */
+.recipe {
+    text-align: center;
+}
+
 /* bottom of page */
-#ingredients {
-    border: 2px solid #85083c;
-    margin-right: 5em;
-    margin-bottom:auto;
-    margin-left: 5em;
+.column>p {
+    font-size: 18pt;
 }
 
 ul {
@@ -87,9 +171,9 @@ ul {
     padding-top: 2em;
 }
 
+/* cute dots on list */
 ul.cow_dot {
 	list-style-image: url(../images/cow.png);
-    margin-left: 4em;
 }
 
 a:hover {

@@ -7,46 +7,63 @@
     <meta name="description" content="recipe for beef stroganoff">
     <title>Beef Stroganoff</title>
     <link rel="stylesheet" href="css\beef_style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Protest+Riot?sort=date">
 </head>
 
 <body>
     <header>
-        <h1>Beef Stroganoff Recipe</h1>
-        <img src="images/beef_meal.jpg" alt="beef stroganoff" height="200">
-        <p><a href="#ingredients"><button>Jump to Recipe</button></a></p>
-        <nav id="nav_bar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tacos.html">Chicken Tacos</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="row">
-            <!-- Left of main page -->
-            <div class="column">
-                <h2>Pictures and Description</h2>
-                <img src="images/rigatoni.jpg" alt="rigatoni" height="200">
-                <br>
-                <img src="images/soup.jpg" alt="onion soup" height="200">
-                <br>
-                <img src="images/mushroom_soup.jpg" alt="mushroom soup" height="200">
-                <br>
-                <img src="images/beef.jpg" alt="beef" height="200">
+        <!-- website logo and jump to home -->
+        <div class="top">
+            <div class="title">
+                <p class="logo">Cooking With Amanda</p>
+                <a href="index.html"><img src="images/cooking.jpg" alt="cartoon cook" height="100"
+                        class="logo"></a>
             </div>
-            <!-- Right of main page -->
-            <div class="column">
-                <p>
-                    explaination of how to prepare
-                </p>
+            <!-- nav menu drop down -->
+            <div class="nav_bar">
+                <button class="drop"><b>Recipes &#8595</b></button>
+                <div class="nav_content">
+                    <a href="index.html">Home</a>
+                    <p>Beef Stroganoff</p>
+                    <a href="tacos.html">Chicken Tacos</a>
+                </div>
             </div>
         </div>
-        <!-- Jump to recipe bottom of main page -->
-        <div class="recipe">
-            <h2>Recipe</h2>
-            <div id="ingredients">
-                <h3><u>Ingredients</u></h3>
+        <!-- jump to bottom of page button -->
+        <div id="title_bar">
+            <div class="beef"><p>Beef Stroganoff Recipe</p></div>
+            <p><a href="#recipe"><button class="jump-to"><b>Jump to Recipe</b></button></a></p>
+        </div>
+    </header>
+    <main>
+        <div class="main_pic">
+            <p><img src="images/beef_meal.jpg" alt="beef stroganoff" height="200"></p>
+            <p>
+                Cooking beef stroganoff always brings me back to my grandmother's
+                cozy kitchen, where I first learned the magic behind this beloved dish.
+                It was on a chilly autumn evening when she decided it was time for
+                me to master the family recipe. We started by tenderly browning the beef,
+                its sizzling sound creating a warm, inviting atmosphere that
+                contrasted with the cold outside. The moment we stirred in the
+                sour cream, transforming the concoction into a creamy, luxurious sauce,
+                was when I truly fell in love with the art of cooking. Each step,
+                from seasoning the meat to watching the sauce thicken,
+                felt like a rite of passage. Now, whenever I prepare beef stroganoff,
+                I'm transported back to that evening, apron tied and spoon in hand,
+                standing next to my grandmother. It's not just a meal;
+                it's a cherished memory, a tradition that I hope to pass down
+                through generations, just as it was passed down to me.
+            </p>
+            <!-- decorative dividing line -->
+            <div class="divide"></div>
+        </div>
+        <div class="row">
+            <!-- add #recipe to add jump to button -->
+            <div id="recipe"></div>
+            <!-- separate page into columns -->
+            <div class="column">
+                <p><u>Ingredients</u></p>
                 <ul class="cow_dot">
                     <li>One package of noodles(I prefer rigatoni)</li>
                     <li>1 can of mushroom soup</li>
@@ -56,8 +73,22 @@
                     <li>1lb of beef (I use either stew meat or tenderized chunks from the butcher)</li>
                 </ul>
             </div>
+            <!-- Right of column -->
+            <div class="column">
+                <p><u>Directions</u></p>
+                <ul class="cow_dot">
+                    <li>Brown beef until some pink is still left.</li>
+                    <li>Pour package of onion soup mix over beef and stir.</li>
+                    <li>Boil noodles per directions.</li>
+                    <li>Add soup, milk and sour cream to beef.</li>
+                    <li>Stir and simmer until noodles are cooked.</li>
+                    <li>Add beef mixture to pot of drained cooked noodles.</li>
+                    <li>Mix well and enjoy!</li>
+                </ul>
+            </div>
         </div>
-        <p><a href="#">Back to Top</a></p>
+        <!-- Jump to recipe bottom of main page -->
+        <p class="recipe"><a href="#">Back to Top</a></p>
     </main>
 </body>
 

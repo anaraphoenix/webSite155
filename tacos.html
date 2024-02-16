@@ -8,41 +8,106 @@
     <title>Chicken Taco Recipe</title>
 </head>
 <body>
-    <header>
-        <h1>Chicken Tacos Recipe</h1>
-        <img src="images/tacos.jpg" alt="chicken tacos" height="200">
-        <p><a href="#ingredients"><button>Jump to Recipe</button></a></p>
-        <nav id="nav_bar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="bs.html">Beef Stroganoff</a></li>
-            </ul>
-        </nav>
+    <header> 
+        <!-- website logo and jump to home -->
+        <div class="top">
+            <div class="title">
+                <p class="logo">Cooking With Amanda</p>
+                <a href="index.html"><img src="images/cooking.jpg" alt="cartoon cook" height="100" class="logo"></a>
+            </div>
+            <!-- nav menu drop down -->
+            <div class="nav_bar">
+                <button class="drop"><b>Recipes &#8595</b></button>
+                <div class="nav_content">
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="bs.html">Beef Stroganoff</a></p>
+                    <p>Chicken Tacos</p>
+                </div>
+            </div>
+        </div>
+        <!-- jump to bottom of page button -->
+        <div id="title_bar">
+            <div class="chicken"><p>Chicken Tacos Recipe</p></div>
+            <p><a href="#recipe"><button class="jump-to"><b>Jump to Recipe</b>
+            </button></a></p>
+        </div>
     </header>
     <main>
-        <div class="row">
-            <!-- Left of main page -->
-            <div class="column">
-                <h2>Pictures and Description</h2>
-            </div>
-            <!-- Right of main page -->
-            <div class="column">
-                <p>
-                    explaination of how to prepare
-                </p>
-            </div>
+        <div class="main_pic">
+            <p><img src="images/tacos.jpg" alt="tacos" height="200"></p>
+            <p>
+                Embarking on my quest to make chicken tacos for the first time, 
+                I was brimming with confidence, armed with a recipe I barely understood.
+                I marinated the chicken with a hodgepodge of spices, convinced I 
+                was on the brink of culinary greatness. As the chicken sizzled 
+                in the pan, my aim was for it to be a little charred but not burnt, 
+                seeking that perfect balance of smoky flavor and tender juiciness. 
+                However, I underestimated the spice level, transforming my kitchen 
+                into a tear gas chamber. Amidst coughing fits and frantic 
+                ventilation attempts, I managed to assemble the tacos using 
+                store-bought tortillas, which were a safe haven in my kitchen chaos. 
+                The end result was a hilariously spicy concoction that required 
+                gallons of water to down. That night, I learned that "a pinch" 
+                of cayenne pepper means something vastly different across recipes, 
+                and my quest for chicken tacos became a fiery tale of survival and 
+                laughter with every tear-inducing bite, celebrating the perfectly 
+                charred yet not burnt chicken that was the heart of the dish.
+            </p>
         </div>
-        <!-- Jump to recipe bottom of main page -->
-        <div>
-            <h2>Recipe</h2>
-            <div id="ingredients">
-                <h3><u>Ingredients</u></h3>
+        <!-- decorative dividing line -->
+        <div class="divide"></div>
+        <div class="row">
+            <!-- add #recipe to add jump to button -->
+            <div id="recipe"></div>
+            <!-- separate page into columns -->
+                <div class="column">
+                    <p><u>Ingredients</u></p>
+                    <ul class="taco_dot">
+                        <li>1/4 cup olive oil</li>
+                        <li>1/4 cup honey</li>
+                        <li>1/2 cup BBQ sauce</li>
+                        <li>1 tsp paprika</li>
+                        <li>1 1/2 tsp garlic power</li>
+                        <li>Flour tortillas, "street taco" size</li>
+                        <li>2lbs of boneless skinless chicken thighs</li>
+                        <li>1 small red onion</li>
+                        <li>6 strips of bacon</li>
+                        <li>8oz of colby jack or monterrey jack cheese, shredded</li>
+                        <li>Chopped cilantro (enough for garnish)</li>
+                        <li>Crema, for drissle. I make Uncle Dan's Ranch Dip</li>
+                        <li>*optional, pickled jalapenos</li>
+                    </ul>
+                </div>
+            <!-- Right of column -->
+            <div class="column">
+                <p><u>Directions</u></p>
                 <ul class="taco_dot">
-                    <li>2lbs of boneless skinless chicken theighs</li>
+                    <li>Preheat oven to 350&deg</li>
+                    <li>Mix oil, honey, BBQ, paprika and garlic powder.</li>
+                    <li>Cut chicken into 1/4 inch pieces.</li>
+                    <li>Put chicken in a bowl or ziplock and pour spice mixture
+                        over to marinate place in fridge for at least 15min.
+                    </li>
+                    <li>In the meantime, dice onion, shred cheese and chop cilantro.</li>
+                    <li>Use kitchen shears to cut bacon into bacon bite size pieces 
+                        and cook until desired crispiness</li>
+                    <li>In same pan the has the bacon grease, heat pan to med-high 
+                        and cook chicken until cooked and there is some char.
+                    </li>
+                    <li>On a flat baking sheet, place parchment paper. Lay out tortillas
+                        overlapping slightly.
+                    </li>
+                    <li>Place cooked chicken on top of the tortillas.
+                        Then sprinkle bacon, cheese and onion. Add jalapeno if desired.
+                    </li>
+                    <li>Bake for 15min.</li>
+                    <li>Drissle on crema or Uncle Dan's and top with cilantro.</li>
+                    <li>Place entire tray on the table and everyone can pull and share!</li>
                 </ul>
             </div>
-            <p><a href="#">Back to Top</a></p>
         </div>
+        <!-- jump back to the top of the page -->
+        <p class="recipe"><a href="#">Back to Top</a></p>
     </main>
 </body>
 </html>

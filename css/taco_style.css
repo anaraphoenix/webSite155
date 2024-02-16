@@ -1,82 +1,164 @@
-* {
-    /* margin: 0;
-    padding: 0; */
-    background-color: #f7b059;
-    color: #093a09;
-    font-family: 'protest riot';
-}
 
 body {
     margin: auto;
     width: 80%;
+    background-color: #e9d3b9;
+    font-family: 'protest riot';
+    color: #093a09;
 }
 
-header {
-    text-align: center;
-    margin: 2em;
-    
+/* Heading */
+.title {
+    font-family: 'Sofia';
+    font-weight: bold;
 }
 
-header>img {
-    padding: 2em;
+.logo {
+    display: block;
+}
+
+/* change page logo for screen size */
+@media only screen and (max-width: 600px) {
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title>a>img {
     border-radius: 50%;
 }
 
-button {
-    margin-bottom: 2em;
+/* jump to bottom recipe button */
+.jump-to {
     padding: 0.5em;
     border-color: #093a09;
     box-shadow: #093a09 5px 2px 2px;
-    
+    min-width: 100px;
 }
 
-#nav_bar ul{
+/* main title and nav dropdown */
+#title_bar{
     list-style-type: none;
     text-align: center;
     border-top: 4px solid #093a09;
     border-bottom: 4px solid #093a09;
-    padding: 1em 0;
-}
-
-
-#nav_bar ul li{
+    background-color: #b6e4b6;
+    padding-left: 2em;
+    padding-right: 2em;
     
-    display: inline;
-    padding: 0 1em;
-    
-    
-}
+} 
 
+/* changed for screen size */
 @media only screen and (max-width: 600px) {
-    #nav_bar ul li{
-        display: flex;
-        justify-content: center;
+    #title_bar{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-top: none;
+        border-bottom: none;
+        padding-top: 1em;
+        padding-bottom: 2em;
+        border-left: 4px solid #093a09;
+        border-right: 4px solid #093a09;
+    }
+}
+
+.chicken {
+    font-size: 20pt;
+}
+
+/* nav dropdown button */
+.nav_bar {
+    position: relative;
+    display: inline-block;
+    padding-top: 2em;
+}
+
+
+.nav_content {
+    display: none;
+    position: absolute;
+    background-color: #76cc76;
+    min-width: 160px;
+    border: solid #093a09 1px;
+    font-size: 14pt;
+}
+
+.nav_content a{
+    color: #093a09;
+    text-decoration: none;
+    
+}
+
+
+.nav_bar:hover .nav_content { 
+    display: block;
+}
+
+/* button */
+.drop {
+    margin-top: 2em;
+    padding: 0.5em;
+    border-color: #093a09;
+    box-shadow: #093a09 5px 2px 2px;
+    min-width: 160px;
+}
+
+/* main part of page */
+
+.main_pic>p {
+    text-align: center;
+    
+} 
+
+/* decoritive dividing line */
+.divide {
+    border: solid #093a09 2px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.row {
+    display: flex;
+}
+
+/* change from columns to look clearer for screen size */
+@media only screen and (max-width: 600px) {
+    .row {
+        display: block;
         width: 100%;
     }
 }
 
-/* main part of page */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    }
-
-.column {
-    flex: 50%;
-    text-align: center;
-    margin-top: 5em;
-    
-}
 
 h2 {
     padding-bottom: 2em;
 }
 
-#ingredients {
-    border: 2px solid #093a09;
-    margin-right: 5em;
-    margin-bottom:auto;
-    margin-left: 5em;
+.column {
+    width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.column>p {
+    font-size: 18pt;
+}
+
+/* back to top link */
+.recipe {
+    text-align: center;
 }
 
 ul {
@@ -84,11 +166,21 @@ ul {
     padding-top: 2em;
 }
 
-ul.taco_dot {
-	list-style-image: url(../images/taco_dot.png);
-    margin-left: 4em;
+.divide {
+    border: solid #093a09 2px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
+/* cute dots on list */
+ul.taco_dot {
+	list-style-image: url(../images/taco_dot.png);
+}
+
+/* bottom of page */
+a {
+    color: #093a09;
+}
 a:hover {
-    color: #76cc76;
+    color: #21f421;
 }

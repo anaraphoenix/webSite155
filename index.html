@@ -8,53 +8,53 @@
     <title>My Favorite Recipes</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Protest+Riot?sort=date">
 </head>
 
 <body>
     <header>
         <!-- main title to my webpage -->
-        <h1>Cooking with Amanda</h1>
+        <h1>Cooking With Amanda</h1>
         <img src="images/cooking.jpg" alt="cartoon cook" height="150">
         <p>
             <b>
-                I love to cook! I try new recipes all the time!
+                I love to cook! I try new recipes all the time.
                 I have a few recipes I use often as well.
                 Here is just a few of my favorite recipes!
             </b>
         </p>
         <!-- links to my other recipes -->
-        <nav id="nav_bar">
-            <ul>
-                <li><a href="bs.html">Beef Stroganoff</a></li>
-                <li><a href="tacos.html">Chicken Tacos</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <!-- pictures and links to other recipes on my website -->
-            <div class="recipes">
-                <div class="recipe_box">
-                    <h2>Beef Stroganoff Recipe</h2>
-                    <p>
-                        <a href="bs.html"><img src="images/stroganoff.jpg" alt="stroganoff">
-                        </a>
-                        <br>
-                        Click picture for recipe
-                    </p>
-                </div>
-                <div class="recipe_box">
-                    <h2>Chicken Tacos Recipe</h2>
-                    <p>
-                        <a href="tacos.html"><img src="images/taco2.jpg" alt="tacos">
-                        </a>
-                        <br>
-                        Click picture for recipe
-                    </p>
+        <div id="title_bar">
+            <div class="welcome"><p>Welcome, Friend!</p></div>
+            <div class="nav_bar">
+                <button class="drop"><b>Recipes &#8595</b></button>
+                <div class="nav_content">
+                    <p>Home</p>
+                    <p><a href="bs.html">Beef Stroganoff</a></p>
+                    <p><a href="tacos.html">Chicken Tacos</a></p>
                 </div>
             </div>
-        </section>
-
+        </div>
+    </header>
+    <main>
+            <!-- pictures and links to other recipes on my website -->
+        <div class="cards">
+            <div class="recipe_card">
+                <a href="bs.html"><img src="images/my_beef.jpg" alt="beef stroganoff" width="250"></a>
+                <div class="recipe_box">
+                    <h4><b>Beef Stroganoff</b></h4>
+                    <p>Click picture for recipe</p>
+                </div>
+            </div>
+            <div class="recipe_card">
+                <a href="tacos.html"><img src="images/taco2.jpg" alt="chicken tacos" width="250"></a>
+                <div class="recipe_box">
+                    <h4><b>Chicken Tacos</b></h4>
+                    <p>Click picture for recipe</p>
+                </div>
+            </div>
+        </div>
+        <!-- link to another website -->
         <section>
             <div id="scones">
                 <p>
