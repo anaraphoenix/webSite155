@@ -45,73 +45,74 @@ body {
     margin-top: 0.5em;
 }
 
-/* main title and nav dropdown */
-#title_bar{
-    list-style-type: none;
-    text-align: center;
-    border-top: 4px solid #85083c;
-    border-bottom: 4px solid #85083c;
-    background-color: #c4a5b2;
-    padding-left: 2em;
-    padding-right: 2em;
-    
+@media only screen and (max-width: 600px) {
+    .jump-to {
+        a:hover {
+            background-color: none;
+        }
+
+    }
 }
 
 /* changed for screen size */
 @media only screen and (max-width: 600px) {
-    #title_bar{
-        margin-left: auto;
-        margin-right: auto;
-        border-top: none;
-        border-bottom: none;
-        padding-top: 1em;
-        padding-bottom: 2em;
-        border-left: 4px solid #85083c;
-        border-right: 4px solid #85083c;
+    .top{
+        flex-direction: column;
     }
 }
 
 .beef {
     font-size: 20pt;
-    text-align: center;
 }
 
-/* nav dropdown button */
-.nav_bar {
-    position: relative;
-    display: inline-block;
+@media only screen and (max-width: 600px) {
+    #title_bar {
+        text-align: center;
+    }
+
 }
 
-
-.nav_content {
-    display: none;
-    position: absolute;
-    background-color: #f4bbeb;
-    min-width: 160px;
-    border: solid #85083c 1px;
-    font-size: 14pt;
+/* nav bar */
+.nav_content>ul {
+    display: flex;
+    justify-content: start;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f4a8a8;
+    height: auto;
 }
 
-.nav_content a{
-    color: #85083c;
-    text-decoration: none;
-    
+.active {
+    background-color: #ad4545;
 }
 
-
-.nav_bar:hover .nav_content { 
+li a {
     display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: #ad4545 solid 2px;
 }
 
-/* button */
-.drop {
-    margin-top: 2em;
-    padding: 0.5em;
-    border-color: #85083c;
-    box-shadow: #85083c 5px 2px 2px;
-    min-width: 160px;
+@media only screen and (max-width: 600px) {
+    .nav_content>ul {
+        flex-direction: column;
+    }
 }
 
+@media only screen and (max-width: 600px) {
+    li a {
+        border-bottom: #ad4545 solid 2px;
+        border-right: none;
+    }
+}
+
+a:hover {
+    background-color: #111;
+}
 
 /* main part of page */
 
@@ -134,7 +135,7 @@ body {
 /* change from columns to look clearer for screen size */
 @media only screen and (max-width: 600px) {
     .row {
-        display: block;
+        flex-direction: column;
     }
 }
 

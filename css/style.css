@@ -29,81 +29,46 @@ header>img{
     
 }
 
-/* main title and nav dropdown */
-#title_bar{
+/* nav bar */
+.nav_content>ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     list-style-type: none;
-    text-align: center;
-    border-top: 4px solid #582e82;
-    border-bottom: 4px solid #582e82;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     background-color: #cfadf1;
-    padding-left: 2em;
-    padding-right: 2em;
-    
-    
+    height: auto;
 }
 
-/* changed for screen size */
-@media only screen and (max-width: 600px) {
-    #title_bar{
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-        border-top: none;
-        border-bottom: none;
-        padding-top: 1em;
-        padding-bottom: 2em;
-        border-left: 4px solid #582e82;
-        border-right: 4px solid #582e82;
-    }
+.active {
+    background-color: #582e82;
 }
 
-.welcome {
-    font-size: 20pt;
-}
-
-/* nav dropdown button */
-.nav_bar {
-    position: relative;
-    display: inline-block;
-}
-
-
-.nav_content {
-    display: none;
-    position: absolute;
-    background-color: #cfadf1;
-    min-width: 160px;
-    border: solid #582e82 1px;
-    font-size: 14pt;
-    
-}
-
-@media only screen and (max-width: 600px) {
-    .nav_content{margin-left: 4.25em;
-    }
-}
-
-.nav_content a{
-    color: #582e82;
-    text-decoration: none;
-    
-}
-
-
-.nav_bar:hover .nav_content { 
+li a {
     display: block;
-    flex-direction: column;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: #582e82 solid 2px;
 }
 
-/* button */
-.drop {
-    margin-top: 2em;
-    padding: 0.5em;
-    border-color: #582e82;
-    box-shadow: #582e82 5px 2px 2px;
-    min-width: 160px;
+@media only screen and (max-width: 600px) {
+    .nav_content>ul {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    li a {
+        border-bottom: #582e82 solid 2px;
+        border-right: none;
+    }
+}
+
+a:hover {
+    background-color: #111;
 }
 
 /* main part of page */

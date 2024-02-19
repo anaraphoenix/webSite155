@@ -1,0 +1,130 @@
+body {
+    color: #f5e5e5;
+    background-color: #ac6262;
+    margin: auto;
+    width: 80%;
+}
+
+/* grid layout */
+main {
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 5px;
+    grid-template-areas: 
+    "head head"
+    "sec sec"
+    "sec1 sec2"
+    "sec1 sec2"
+    "foot foot";
+}
+
+/* grid adjustment for screen size */
+@media only screen and (max-width: 600px){
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "head"
+        "sec"
+        "sec1"
+        "sec2"
+        "foot";
+    }
+}
+
+
+.head {
+    grid-area: head;
+}
+
+@media only screen and (max-width: 600px){
+    .head {
+        text-align: center;
+    }
+}
+
+/* main>div {
+    border: #111 solid 2px;
+/* } /* used to define grid layout */
+
+
+.title {
+    font-family: 'Sofia';
+    font-weight: bold;
+    justify-content: center;
+}
+
+.sec {
+    grid-area: sec;
+    display: flex;
+    width: 75%;
+}
+
+.moco {
+
+    margin-right: 3em;
+    margin-left: 5em;
+}
+
+@media only screen and (max-width: 798px) {
+    .sec {
+        flex-direction: column;
+    }
+}
+
+/* nav bar */
+.nav_content>ul {
+    display: flex;
+    justify-content: start;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f4a8a8;
+    height: auto;
+}
+
+.active {
+    background-color: #ad4545;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: #ad4545 solid 2px;
+}
+
+a:hover {
+    background-color: #111;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav_content>ul {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    li a {
+        border-bottom: #ad4545 solid 2px;
+        border-right: none;
+    }
+}
+
+
+.sec1 {
+    grid-area: sec1;
+}
+
+.sec2 {
+    grid-area: sec2;
+}
+
+.foot {
+    grid-area: foot;
+}
