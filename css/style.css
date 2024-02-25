@@ -1,81 +1,23 @@
-*{
-    color: #582e82;
+/* color palate*/
+:root {
+    --main-color: #e7f6f8;
+    --nav-bar: #006985;
+    --active-nav: #90dcf1;
+    --border: #032731;
+    --nav-dark: #011317;
+    --main-text: #ffffff;
+    --shadow: #00000033;
 }
 
-body {
-    margin: auto;
-    width: 80%;
-    background: linear-gradient(to right, #f7b059, #cfadf1);
-    font-family: 'protest riot';
-}
-
-/* Heading */
-h1 {
-    font-family: 'Sofia';
-}
-
-h2 {
-    padding: 1em;
-    margin-left: 2em;
-}
-
-header {
+main>p {
     text-align: center;
-    font-size: 14pt;
-}
-
-header>img{
-    border-radius: 50%;
-    
-}
-
-/* nav bar */
-.nav_content>ul {
-    display: flex;
-    justify-content: start;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #cfadf1;
-    height: auto;
-}
-
-.active {
-    background-color: #582e82;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border-right: #582e82 solid 2px;
-}
-
-@media only screen and (max-width: 600px) {
-    .nav_content>ul {
-        flex-direction: column;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    li a {
-        border-bottom: #582e82 solid 2px;
-        border-right: none;
-    }
-}
-
-a:hover {
-    background-color: #111;
 }
 
 /* main part of page */
 .cards {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 5em;
+    padding: 5em;
 }
 
 /* change to view on smaller screen */
@@ -86,7 +28,7 @@ a:hover {
 }
 
 .recipe_card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: var(--shadow) 0 4px 8px 0;
     transition: 0.3s;
     
 }
@@ -101,16 +43,11 @@ a:hover {
 }
 
 .recipe_card:hover {
-    box-shadow: 0 8px 16px 0 #00000033;
+    box-shadow: var(--shadow) 0 8px 16px 0 ;
 }
 
 .recipe_box {
     padding: 2px 16px;
-}
-
-
-a:hover {
-    color:#b54bb5;
 }
 
 #scones {
@@ -132,6 +69,6 @@ a:hover {
 /* bottom of page */
 footer{
     text-align: center;
-    border-top: solid #582e82 2px;
+    border-top: var(--border) solid 2px;
     margin-top: 3em;
 }

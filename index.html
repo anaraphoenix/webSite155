@@ -7,6 +7,7 @@
     <meta name="description" content="Website about my favorite recipes to make.">
     <title>My Favorite Recipes</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all_style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Protest+Riot?sort=date">
 </head>
@@ -14,16 +15,10 @@
 <body>
     <header>
         <!-- main title to my webpage -->
-        <h1>Cooking With Amanda</h1>
-        <img src="images/cooking.jpg" alt="cartoon cook" height="150">
-        <p>
-            <b>
-                I love to cook! I try new recipes all the time.
-                I have a few recipes I use often as well.
-                Here is just a few of my favorite recipes!
-            </b>
-        </p>
-        <!-- links to my other recipes -->
+        <div class="title">
+            <h1 class="logo">Cooking With Amanda</h1>
+            <a href="index.html"><img src="images/cooking.jpg" alt="cartoon cook" height="100" class="logo"></a>
+        </div>
         <div id="title_bar">
             <div class="nav_bar">
                 <div class="nav_content">
@@ -38,7 +33,13 @@
         </div>
     </header>
     <main>
-            <!-- pictures and links to other recipes on my website -->
+        <p>
+            <b>
+                I love to cook! I try new recipes all the time.
+                I have a few recipes I use often as well.
+                Here is just a few of my favorite recipes!
+            </b>
+        </p>
         <div class="cards">
             <div class="recipe_card">
                 <a href="bs.html"><img src="images/my_beef.jpg" alt="beef stroganoff" width="250"></a>
@@ -51,6 +52,13 @@
                 <a href="tacos.html"><img src="images/taco2.jpg" alt="chicken tacos" width="250"></a>
                 <div class="recipe_box">
                     <h4><b>Chicken Tacos</b></h4>
+                    <p>Click picture for recipe</p>
+                </div>
+            </div>
+            <div class="recipe_card">
+                <a href="moco.html"><img src="images/moco.jpg" alt="loco moco" width="250"></a>
+                <div class="recipe_box">
+                    <h4><b>Loco Moco</b></h4>
                     <p>Click picture for recipe</p>
                 </div>
             </div>

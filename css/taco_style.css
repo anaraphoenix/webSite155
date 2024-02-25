@@ -1,57 +1,10 @@
-
-body {
+main {
     margin: auto;
     width: 80%;
-    background-color: #e9d3b9;
-    font-family: 'protest riot';
-    color: #093a09;
-}
-
-/* Heading */
-.title {
-    font-family: 'Sofia';
-    font-weight: bold;
-}
-
-.logo {
-    display: block;
-}
-
-/* change page logo for screen size */
-@media only screen and (max-width: 600px) {
-    .logo {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-}
-
-.top {
-    display: flex;
-    justify-content: space-between;
-}
-
-@media only screen and (max-width: 600px) {
-    .top{
-        flex-direction: column;
-    }
 }
 
 .title>a>img {
     border-radius: 50%;
-}
-
-/* jump to bottom recipe button */
-.jump-to {
-    padding: 0.5em;
-    border-color: #093a09;
-    box-shadow: #093a09 5px 2px 2px;
-    min-width: 100px;
-}
-
-.chicken {
-    font-size: 20pt;
-    text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -59,61 +12,6 @@ body {
         text-align: center;
     }
 
-}
-
-/* nav bar */
-.nav_content>ul {
-    display: flex;
-    justify-content: start;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #f4a8a8;
-    height: auto;
-}
-
-.active {
-    background-color: #ad4545;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border-right: #ad4545 solid 2px;
-}
-
-@media only screen and (max-width: 600px) {
-    .nav_content>ul {
-        flex-direction: column;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    li a {
-        border-bottom: #ad4545 solid 2px;
-        border-right: none;
-    }
-}
-
-a:hover {
-    background-color: #111;
-}
-/* main part of page */
-
-.main_pic>p {
-    text-align: center;
-    
-} 
-
-/* decoritive dividing line */
-.divide {
-    border: solid #093a09 2px;
-    margin-left: 150px;
-    margin-right: 150px;
 }
 
 .row {
@@ -127,7 +25,6 @@ a:hover {
         width: 100%;
     }
 }
-
 
 h2 {
     padding-bottom: 2em;
@@ -143,6 +40,7 @@ h2 {
     }
 }
 
+/* ingredients and directions titles*/
 .column>p {
     font-size: 18pt;
 }
@@ -157,21 +55,8 @@ ul {
     padding-top: 2em;
 }
 
-.divide {
-    border: solid #093a09 2px;
-    margin-left: 150px;
-    margin-right: 150px;
-}
-
 /* cute dots on list */
 ul.taco_dot {
 	list-style-image: url(../images/taco_dot.png);
 }
 
-/* bottom of page */
-a {
-    color: #093a09;
-}
-a:hover {
-    color: #21f421;
-}

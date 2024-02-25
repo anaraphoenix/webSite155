@@ -1,57 +1,10 @@
-
-body {
+main {
     margin: auto;
     width: 80%;
-    background-color: #f6ddef;
-    font-family: 'protest riot';
-    color: #85083c;
 }
-
-/* Heading */
-.title {
-    font-family: 'Sofia';
-    font-weight: bold;
-}
-
-.logo {
-    display: block;
-    
-}
-
-@media only screen and (max-width: 600px) {
-    .logo {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-}
-
-.top {
-    display: flex;
-    justify-content: space-between;
-}
-
 
 .title>a>img {
     border-radius: 50%;
-}
-
-/* jump to bottom recipe button */
-.jump-to {
-    padding: 0.5em;
-    border-color: #85083c;
-    box-shadow: #85083c 5px 2px 2px;
-    min-width: 100px;
-    margin-top: 0.5em;
-}
-
-@media only screen and (max-width: 600px) {
-    .jump-to {
-        a:hover {
-            background-color: none;
-        }
-
-    }
 }
 
 /* changed for screen size */
@@ -61,71 +14,11 @@ body {
     }
 }
 
-.beef {
-    font-size: 20pt;
-}
-
 @media only screen and (max-width: 600px) {
     #title_bar {
         text-align: center;
     }
 
-}
-
-/* nav bar */
-.nav_content>ul {
-    display: flex;
-    justify-content: start;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #f4a8a8;
-    height: auto;
-}
-
-.active {
-    background-color: #ad4545;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border-right: #ad4545 solid 2px;
-}
-
-@media only screen and (max-width: 600px) {
-    .nav_content>ul {
-        flex-direction: column;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    li a {
-        border-bottom: #ad4545 solid 2px;
-        border-right: none;
-    }
-}
-
-a:hover {
-    background-color: #111;
-}
-
-/* main part of page */
-
-.main_pic>p {
-    text-align: center;
-    
-}
-
-/* decoritive dividing line */
-.divide {
-    border: solid #85083c 2px;
-    margin-left: 150px;
-    margin-right: 150px;
 }
 
 .row {
@@ -162,7 +55,7 @@ h2 {
     text-align: center;
 }
 
-/* bottom of page */
+/* ingredients and directions titles*/
 .column>p {
     font-size: 18pt;
 }
@@ -177,7 +70,4 @@ ul.cow_dot {
 	list-style-image: url(../images/cow.png);
 }
 
-a:hover {
-    color: #ba5e84;
-}
 

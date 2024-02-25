@@ -7,6 +7,7 @@
     <meta name="description" content="recipe for beef stroganoff">
     <title>Beef Stroganoff</title>
     <link rel="stylesheet" href="css\beef_style.css">
+    <link rel="stylesheet" href="css/all_style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Protest+Riot?sort=date">
 </head>
@@ -16,16 +17,9 @@
         <!-- website logo and jump to home -->
         <div class="top">
             <div class="title">
-                <p class="logo">Cooking With Amanda</p>
-                <a href="index.html"><img src="images/cooking.jpg" alt="cartoon cook" height="100"
-                class="logo"></a>
+                <h1 class="logo">Cooking With Amanda</h1>
+                <a href="index.html"><img src="images/cooking.jpg" alt="cartoon cook" height="100" class="logo"></a>
             </div>
-            <div id="title_bar">
-                <div class="beef"><p>Beef Stroganoff Recipe</p></div>
-                <p><a href="#recipe"><button class="jump-to"><b>Jump to Recipe</b></button></a></p>
-            </div>
-        </div>
-            <!-- nav menu drop down -->
             <div class="nav_bar">
                 <div class="nav_content">
                     <ul>
@@ -36,37 +30,39 @@
                     </ul>
                 </div>
             </div>
-        <!-- jump to bottom of page button -->
-        
+        </div>
     </header>
     <main>
-        <div class="main_pic">
-            <p><img src="images/beef_meal.jpg" alt="beef stroganoff" height="200"></p>
-            <p>
-                Cooking beef stroganoff always brings me back to my grandmother's
-                cozy kitchen, where I first learned the magic behind this beloved dish.
-                It was on a chilly autumn evening when she decided it was time for
-                me to master the family recipe. We started by tenderly browning the beef,
-                its sizzling sound creating a warm, inviting atmosphere that
-                contrasted with the cold outside. The moment we stirred in the
-                sour cream, transforming the concoction into a creamy, luxurious sauce,
-                was when I truly fell in love with the art of cooking. Each step,
-                from seasoning the meat to watching the sauce thicken,
-                felt like a rite of passage. Now, whenever I prepare beef stroganoff,
-                I'm transported back to that evening, apron tied and spoon in hand,
-                standing next to my grandmother. It's not just a meal;
-                it's a cherished memory, a tradition that I hope to pass down
-                through generations, just as it was passed down to me.
-            </p>
-            <!-- decorative dividing line -->
-            <div class="divide"></div>
+        <div class="container">
+            <div class="container-pic">
+                <img src="images/beef_meal.jpg" alt="beef stroganoff" height="200">
+            </div>
+            <div class="container-text">
+                <p>
+                    Cooking beef stroganoff always brings me back to my grandmother's
+                    cozy kitchen, where I first learned the magic behind this beloved dish.
+                    It was on a chilly autumn evening when she decided it was time for
+                    me to master the family recipe. We started by tenderly browning the beef,
+                    its sizzling sound creating a warm, inviting atmosphere that
+                    contrasted with the cold outside. The moment we stirred in the
+                    sour cream, transforming the concoction into a creamy, luxurious sauce,
+                    was when I truly fell in love with the art of cooking. Each step,
+                    from seasoning the meat to watching the sauce thicken,
+                    felt like a rite of passage. Now, whenever I prepare beef stroganoff,
+                    I'm transported back to that evening, apron tied and spoon in hand,
+                    standing next to my grandmother. It's not just a meal;
+                    it's a cherished memory, a tradition that I hope to pass down
+                    through generations, just as it was passed down to me.
+                </p>
+            </div>
         </div>
+        <!-- decorative dividing line -->
+        <div class="divide"></div>
         <div class="row">
-            <!-- add #recipe to add jump to button -->
             <div id="recipe"></div>
             <!-- separate page into columns -->
             <div class="column">
-                <p><u>Ingredients</u></p>
+                <p>Ingredients</p>
                 <ul class="cow_dot">
                     <li>One package of noodles(I prefer rigatoni)</li>
                     <li>1 can of mushroom soup</li>
@@ -78,7 +74,7 @@
             </div>
             <!-- Right of column -->
             <div class="column">
-                <p><u>Directions</u></p>
+                <p>Directions</p>
                 <ul class="cow_dot">
                     <li>Brown beef until some pink is still left.</li>
                     <li>Pour package of onion soup mix over beef and stir.</li>

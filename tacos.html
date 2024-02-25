@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/taco_style.css">
+    <link rel="stylesheet" href="css/all_style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Protest+Riot?sort=date">
     <title>Chicken Taco Recipe</title>
 </head>
+
 <body>
-    <header> 
+    <header>
         <!-- website logo and jump to home -->
         <div class="top">
             <div class="title">
-                <p class="logo">Cooking With Amanda</p>
+                <h1 class="logo">Cooking With Amanda</h1>
                 <a href="index.html"><img src="images/cooking.jpg" alt="cartoon cook" height="100" class="logo"></a>
             </div>
-            <div id="title_bar">
-                <div class="chicken"><p>Chicken Tacos Recipe</p></div>
-                <p><a href="#recipe"><button class="jump-to"><b>Jump to Recipe</b>
-                </button></a></p>
+        </div>
+        <div class="nav_bar">
+            <div class="nav_content">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bs.html">Beef Stroganoff</a></li>
+                    <li><a href="tacos.html" class="active">Chicken Tacos</a></li>
+                    <li><a href="moco.html">Loco Moco</a></li>
+                </ul>
             </div>
         </div>
-            <!-- nav menu drop down -->
-            <div class="nav_bar">
-                <div class="nav_content">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="bs.html">Beef Stroganoff</a></li>
-                        <li><a href="tacos.html" class="active">Chicken Tacos</a></li>
-                        <li><a href="moco.html">Loco Moco</a></li>
-                    </ul>
-                </div>
-            </div>
     </header>
     <main>
-        <div class="main_pic">
-            <p><img src="images/tacos.jpg" alt="tacos" height="200"></p>
-            <p>
-                Embarking on my quest to make chicken tacos for the first time, 
-                I was brimming with confidence, armed with a recipe I barely understood.
-                I marinated the chicken with a hodgepodge of spices, convinced I 
-                was on the brink of culinary greatness. As the chicken sizzled 
-                in the pan, my aim was for it to be a little charred but not burnt, 
-                seeking that perfect balance of smoky flavor and tender juiciness. 
-                However, I underestimated the spice level, transforming my kitchen 
-                into a tear gas chamber. Amidst coughing fits and frantic 
-                ventilation attempts, I managed to assemble the tacos using 
-                store-bought tortillas, which were a safe haven in my kitchen chaos. 
-                The end result was a hilariously spicy concoction that required 
-                gallons of water to down. That night, I learned that "a pinch" 
-                of cayenne pepper means something vastly different across recipes, 
-                and my quest for chicken tacos became a fiery tale of survival and 
-                laughter with every tear-inducing bite, celebrating the perfectly 
-                charred yet not burnt chicken that was the heart of the dish.
-            </p>
+        <div class="container">
+            <div class="container-pic">
+                <img src="images/tacos.jpg" alt="chicken tacos">
+            </div>
+            <div class="container-text">
+                <p>
+                    Embarking on my quest to make chicken tacos for the first time,
+                    I was brimming with confidence, armed with a recipe I barely understood.
+                    I marinated the chicken with a hodgepodge of spices, convinced I
+                    was on the brink of culinary greatness. As the chicken sizzled
+                    in the pan, my aim was for it to be a little charred but not burnt,
+                    seeking that perfect balance of smoky flavor and tender juiciness.
+                    However, I underestimated the spice level, transforming my kitchen
+                    into a tear gas chamber. Amidst coughing fits and frantic
+                    ventilation attempts, I managed to assemble the tacos using
+                    store-bought tortillas, which were a safe haven in my kitchen chaos.
+                    The end result was a hilariously spicy concoction that required
+                    gallons of water to down. That night, I learned that "a pinch"
+                    of cayenne pepper means something vastly different across recipes,
+                    and my quest for chicken tacos became a fiery tale of survival and
+                    laughter with every tear-inducing bite, celebrating the perfectly
+                    charred yet not burnt chicken that was the heart of the dish.
+                </p>
+            </div>
         </div>
-        <!-- decorative dividing line -->
-        <div class="divide"></div>
-        <div class="row">
-            <!-- add #recipe to add jump to button -->
-            <div id="recipe"></div>
-            <!-- separate page into columns -->
+            <!-- decorative dividing line -->
+            <div class="divide"></div>
+            <div class="row">
+                <!-- add #recipe to add jump to button -->
+                <div id="recipe"></div>
+                <!-- separate page into columns -->
                 <div class="column">
-                    <p><u>Ingredients</u></p>
+                    <p>Ingredients</p>
                     <ul class="taco_dot">
                         <li>1/4 cup olive oil</li>
                         <li>1/4 cup honey</li>
@@ -79,36 +81,37 @@
                         <li>*optional, pickled jalapenos</li>
                     </ul>
                 </div>
-            <!-- Right of column -->
-            <div class="column">
-                <p><u>Directions</u></p>
-                <ul class="taco_dot">
-                    <li>Preheat oven to 350&deg</li>
-                    <li>Mix oil, honey, BBQ, paprika and garlic powder.</li>
-                    <li>Cut chicken into 1/4 inch pieces.</li>
-                    <li>Put chicken in a bowl or ziplock and pour spice mixture
-                        over to marinate place in fridge for at least 15min.
-                    </li>
-                    <li>In the meantime, dice onion, shred cheese and chop cilantro.</li>
-                    <li>Use kitchen shears to cut bacon into bacon bite size pieces 
-                        and cook until desired crispiness</li>
-                    <li>In same pan the has the bacon grease, heat pan to med-high 
-                        and cook chicken until cooked and there is some char.
-                    </li>
-                    <li>On a flat baking sheet, place parchment paper. Lay out tortillas
-                        overlapping slightly.
-                    </li>
-                    <li>Place cooked chicken on top of the tortillas.
-                        Then sprinkle bacon, cheese and onion. Add jalapeno if desired.
-                    </li>
-                    <li>Bake for 15min.</li>
-                    <li>Drissle on crema or Uncle Dan's and top with cilantro.</li>
-                    <li>Place entire tray on the table and everyone can pull and share!</li>
-                </ul>
+                <!-- Right of column -->
+                <div class="column">
+                    <p>Directions</p>
+                    <ul class="taco_dot">
+                        <li>Preheat oven to 350&deg</li>
+                        <li>Mix oil, honey, BBQ, paprika and garlic powder.</li>
+                        <li>Cut chicken into 1/4 inch pieces.</li>
+                        <li>Put chicken in a bowl or ziplock and pour spice mixture
+                            over to marinate place in fridge for at least 15min.
+                        </li>
+                        <li>In the meantime, dice onion, shred cheese and chop cilantro.</li>
+                        <li>Use kitchen shears to cut bacon into bacon bite size pieces
+                            and cook until desired crispiness</li>
+                        <li>In same pan the has the bacon grease, heat pan to med-high
+                            and cook chicken until cooked and there is some char.
+                        </li>
+                        <li>On a flat baking sheet, place parchment paper. Lay out tortillas
+                            overlapping slightly.
+                        </li>
+                        <li>Place cooked chicken on top of the tortillas.
+                            Then sprinkle bacon, cheese and onion. Add jalapeno if desired.
+                        </li>
+                        <li>Bake for 15min.</li>
+                        <li>Drissle on crema or Uncle Dan's and top with cilantro.</li>
+                        <li>Place entire tray on the table and everyone can pull and share!</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <!-- jump back to the top of the page -->
-        <p class="recipe"><a href="#">Back to Top</a></p>
+            <!-- jump back to the top of the page -->
+            <p class="recipe"><a href="#">Back to Top</a></p>
     </main>
 </body>
+
 </html>

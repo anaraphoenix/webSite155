@@ -1,0 +1,138 @@
+/* styling for pages with same elements*/
+
+body {
+    font-family: 'protest riot';
+    padding: 0;
+    margin: 0;
+    background-color: var(--main-color);
+    color: var(--border);
+}
+
+/* color palate*/
+:root {
+    --main-color: #e7f6f8;
+    --nav-bar: #006985;
+    --active-nav: #90dcf1;
+    --border: #032731;
+    --nav-dark: #011317;
+    --main-text: #ffffff;
+    --shadow: #00000033;
+}
+
+.title {
+    text-align: center;
+}
+
+/* only applies to beef and chicken pages not grid*/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+}
+
+.container-pic {
+    flex: 1;
+    max-width: 40%;
+}
+
+@media only screen and (max-width: 798px) {
+    .container-pic {
+        max-width: 100%;
+    }
+}
+
+.container-pic img{
+    width: 100%;
+    height: auto;
+    min-width: 200px;
+}
+
+.container-text {
+    flex: 1;
+    padding: 0 20px;
+}
+
+@media only screen and (max-width: 798px){
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* Heading and nav same across all pages*/
+header{
+    background-image: url("../images/header.jpg");
+    background-size: auto;
+    background-position: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.logo {
+    font-family: "Sofia";
+    font-size: 20pt;
+}
+
+.title>a>img {
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .top{
+        flex-direction: column;
+    }
+}
+
+.nav_content>ul {
+    display: flex;
+    justify-content: start;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--nav-bar);
+    height: auto;
+}
+
+.active {
+    background-color: var(--active-nav);
+}
+
+li a {
+    display: block;
+    color: var(--main-text);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: var(--border) solid 2px;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav_content>ul {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    li a {
+        border-bottom: var(--border) solid 2px;
+        border-right: none;
+    }
+}
+
+.nav_content>ul>li:hover {
+    background-color: var(--nav-dark);
+    color: var(--main-color);
+}
+
+a {
+    color: var(--border) ;
+}
+
+/* decoritive divider line*/
+.divide {
+    border: var(--border) solid 2px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
