@@ -52,13 +52,16 @@ header {
     text-align: left;
     padding: 20px;
     margin: 0px 150px;
+    margin-top: 20px;
+    border: solid var(--border) 3px;
 }
 
 
 @media only screen and (max-width: 798px) {
     .sec {
         flex-direction: column;
-        margin: auto;
+        margin: 50px;
+        margin-top: 10px;
     }
 }
 
@@ -70,7 +73,7 @@ header {
 @media only screen and (max-width: 798px) {
     .sec1, .sec2 {
         text-align: left;
-        margin: 0;
+        margin: 50px;
     }
 }
 

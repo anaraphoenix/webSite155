@@ -1,0 +1,20 @@
+
+I got one review...
+
+Hi Amanda,
+
+Overall for your website, I do not see anything that really needs changing. 
+The color scheme is good, and the layout is also really good. 
+The navbar doesn't take up that much room, but I imagine that is intentional, 
+so more recipes can be added.
+** I made the nav bar spaced evenly 
+
+That being said, there were two small things that I think you could benefit from. 
+For starters, the text on the pages of the recipes themselves seems too compact, 
+and I think it would really benefit from being spaced a bit more. 
+** I changed the font and I added a border around this section
+
+Additionally, the picture at the bottom of the scones just seems a little 
+bit out of place, and I think it could benefit from some additional 
+formatting to make it fit in better. 
+** I reduced the size of the picture
