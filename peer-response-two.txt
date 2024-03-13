@@ -1,0 +1,7 @@
+Jasons recommendation I changed the recipe cards to be clickable. Added the 
+changes to the text about eggs.
+
+Jacobs recommendation I changed the cards to be above the fold. I changed the media query 
+to 800px to prevent overlap still overlap at 770.
+
+Added a favicon

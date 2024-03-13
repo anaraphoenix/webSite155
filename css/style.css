@@ -17,11 +17,11 @@ main>p {
 .cards {
     display: flex;
     justify-content: space-evenly;
-    padding: 5em;
+    padding: 2em;
 }
 
 /* change to view on smaller screen */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .cards {
         flex-direction: column;
     }
@@ -34,7 +34,7 @@ main>p {
 }
 
 /* adjust the recipe card format for small screen */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .recipe_card {
         margin-top: 2em;
         text-align: center;
@@ -48,6 +48,7 @@ main>p {
 
 .recipe_box {
     padding: 2px 16px;
+    text-align: center;
 }
 
 #scones {
